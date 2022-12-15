@@ -1,5 +1,5 @@
 const myslide = document.querySelectorAll('.myslider'),
-    dot = document.querySelectorAll('.dot');
+        dot = document.querySelectorAll('.dot');
 let counter = 1;
 sildefun(counter);
 let timer = setInterval(autoslide, 5000);

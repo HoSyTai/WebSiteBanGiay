@@ -10,20 +10,20 @@
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .cart-details thead{
     text-align: left;
     text-transform: uppercase;
     font-size: 1.6rem;
-
+    
 }
 .item--remove i{
     font-size: 2.5rem;
@@ -36,8 +36,8 @@ input[type=number] {
     text-decoration: none;
     cursor: pointer;
 }
-table {
-    border-collapse: collapse;
+table { 
+    border-collapse: collapse; 
 }
 .cart__row{
     border-bottom: 1px solid rgb(236 220 220);
@@ -80,7 +80,7 @@ table {
     float: left;
 }
 .cart__heading:nth-child(4){
-    text-align: end;
+	text-align: end;
 }
 .minus, .add{
     font-size: 1.4rem;
@@ -132,7 +132,7 @@ table {
     font-size: 1.5rem;
     margin-bottom: 10px;
     border-bottom: 1px solid rgb(236 220 220);
-    padding: 25px 0;
+   	padding: 25px 0;
 }
 .fee:nth-child(4){
     border-bottom: 3px solid rgb(236 220 220);

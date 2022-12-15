@@ -57,7 +57,7 @@
 .single-product-desc{
     font-size: 1.6rem;
     text-align: justify;
-    text-justify: inter-word;
+  text-justify: inter-word;
     margin-bottom: 40px;
 }
 .details{
@@ -79,7 +79,7 @@
     border: 1px solid rgb(248 68 68);
 }
 .btn.btn--add:hover{
-    background-color: #8d6951;
+	background-color: #8d6951;
 }
 .single-product-id{
     margin-top: 20px;
@@ -107,8 +107,8 @@
     text-transform: uppercase;
 }
 .minus.detail, .add.detail{
-    padding: 11.5px 6px;
+	padding: 11.5px 6px;
 }
 .quantity.detail{
-    font-size: 1.55rem;
+	font-size: 1.55rem;
 }

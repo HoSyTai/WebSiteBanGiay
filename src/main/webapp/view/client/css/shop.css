@@ -31,8 +31,8 @@
 }
 .products__wrapper{
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: space-between;  
+    gap: 2rem; 
 }
 .products__rigtside{
     width: 80%;
@@ -125,7 +125,7 @@
     color: #fff;
 }
 .item__name__link{
-    text-decoration: none;
+	text-decoration: none;
 }
 .page__item:hover ,.next-page:hover,.prev-page:hover{
     background-color: #c89979;

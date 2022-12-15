@@ -15,8 +15,8 @@ import com.watch.model.User;
  */
 @WebServlet("/direction-control")
 public class DirectionController extends HttpServlet {
-    private static final long serialVersionUID = 1L;
-
+	private static final long serialVersionUID = 1L;
+       
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -25,30 +25,30 @@ public class DirectionController extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-    /**
-     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-     */
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
-        HttpSession ss = request.getSession();
-        User user = (User) ss.getAttribute("user");
-        switch (user.getRole()) {
-            case 1:
-                response.sendRedirect("./admin-product");
-                break;
-            case 2:
-                response.sendRedirect("./home");
-                break;
-        }
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		HttpSession ss = request.getSession();
+		User user = (User) ss.getAttribute("user");
+		switch (user.getRole()) {
+		case 1:
+			response.sendRedirect("./admin-product");
+			break;
+		case 2:
+			response.sendRedirect("./home");
+			break;
+		}
 
-    }
+	}
 
-    /**
-     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-     */
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
-        doGet(request, response);
-    }
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
 
 }

@@ -51,11 +51,11 @@
     border-radius: 2px;
     margin: 10px 0;
     box-shadow: 1px 0 1px #ccc;
-
+   
 }
 .form-group-small > input:focus, .order-form-group > input:focus{
     box-shadow: 0 0 5px #ccc;
-}
+} 
 #ghichu{
     border: 1px solid #ddd;
     border-radius: 2px;
