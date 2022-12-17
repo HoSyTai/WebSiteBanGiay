@@ -61,7 +61,8 @@ public class PlaceOrderController extends HttpServlet {
             out.println("alert('Information is required');");
             out.println("location='./view/client/checkout.jsp'");
             out.println("</script>");
-        } else {
+        }
+        else {
             try {
                 RSA rsa = new RSA();
                 String stringPubKey = user.getPubicKey();
@@ -79,7 +80,8 @@ public class PlaceOrderController extends HttpServlet {
                     Email.sendMail(email, rsa.encrypt(hashFilePdf));
                     request.setAttribute("orderId", orderId);
                     request.getRequestDispatcher("/order").forward(request, response);
-                } else {
+                }
+                else {
                     request.getRequestDispatcher("/view/client/checkout.jsp").forward(request, response);
                 }
 

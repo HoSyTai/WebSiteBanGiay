@@ -103,7 +103,8 @@ public class User {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
-                ", role=" + role +
+                ", role=" + role + '\'' +
+                ", pubicKey=" + pubicKey +
                 '}';
     }
     public String getPubicKey() {
