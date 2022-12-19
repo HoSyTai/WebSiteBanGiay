@@ -27,9 +27,8 @@ public class RegisterController extends HttpServlet {
 		String pass = request.getParameter("password");
 		String firstName = request.getParameter("firstname");
 		String lastName = request.getParameter("lastname");
-		String p_key = request.getParameter("p_key");
 		uService = new UserServiceImp();
-		boolean isOk = uService.register(firstName, lastName, username, pass,p_key);
+		boolean isOk = uService.register(firstName, lastName, username, pass);
 		if (isOk) {
 			request.getRequestDispatcher("/home").forward(request, response);
 		} else {

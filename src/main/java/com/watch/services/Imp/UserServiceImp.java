@@ -18,8 +18,8 @@ public class UserServiceImp implements IUserService {
     }
 
     @Override
-    public boolean register(String firstname, String lastname, String username, String password,String p_key) {
-        return dao.insert(firstname, lastname, username, password,p_key);
+    public boolean register(String firstname, String lastname, String username, String password) {
+        return dao.insert(firstname, lastname, username, password);
     }
 
 }

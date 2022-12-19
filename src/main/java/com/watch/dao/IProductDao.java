@@ -23,7 +23,7 @@ public interface IProductDao {
     List<Product> getProductByName(String name);
 
 
-    List<Product> getProductByColor(String color);
+//    List<Product> getProductByColor(String color);
 
     int getNumOfProduct(String cate, String gender, String name);
 

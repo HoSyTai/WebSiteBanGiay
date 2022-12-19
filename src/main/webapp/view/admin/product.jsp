@@ -75,7 +75,7 @@
 					</tbody>
 
 				</table>
-				<div class="pagingation">
+				<div class="pagination">
 					<div class="pagination__wrapper">
 						<c:if test="${currentPage > 1}">
 							<span id="prevBtn" class="prev-page"><i

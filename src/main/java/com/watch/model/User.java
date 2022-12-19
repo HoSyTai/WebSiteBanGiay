@@ -10,13 +10,13 @@ public class User {
     private String city;
     private int role;
 
-    private String pubicKey;
+
 
     public User() {
 
     }
     public User(String userName, String password, String firstName, String lastName, String phoneNumber, String address,
-                String city, int role, String pubicKey) {
+                String city, int role) {
         super();
         this.userName = userName;
         this.password = password;
@@ -26,7 +26,6 @@ public class User {
         this.address = address;
         this.city = city;
         this.role = role;
-        this.pubicKey = pubicKey;
     }
 
     public String getUserName() {
@@ -103,16 +102,8 @@ public class User {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
-                ", role=" + role + '\'' +
-                ", pubicKey=" + pubicKey +
+                ", role=" + role +
                 '}';
-    }
-    public String getPubicKey() {
-        return pubicKey;
-    }
-
-    public void setPubicKey(String pubicKey) {
-        this.pubicKey = pubicKey;
     }
 
 }
