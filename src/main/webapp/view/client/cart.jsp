@@ -107,7 +107,7 @@
         itemTotal= $(this).closest('tr').find('td:eq(3)')
         $.ajax({
             type: "GET",
-            url: "<c:url value = "/addjust"></c:url>",
+            url: "<c:url value = "/adjust"></c:url>",
             data: {
                 itemId: itemId
             },

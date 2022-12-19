@@ -12,7 +12,7 @@ import com.google.gson.Gson;
 import com.watch.model.Cart;
 
 
-@WebServlet({ "/addjust", "/remove", "/minus" })
+@WebServlet({ "/adjust", "/remove", "/minus" })
 public class ChangQty extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -24,7 +24,7 @@ public class ChangQty extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String url = request.getRequestURL().toString();
-		if (url.contains("addjust")) {
+		if (url.contains("adjust")) {
 			add(request, response);
 		} else if (url.contains("minus")) {
 			minus(request, response);

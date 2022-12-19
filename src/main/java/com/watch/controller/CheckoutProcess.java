@@ -1,8 +1,6 @@
 package com.watch.controller;
 
-import com.watch.model.Cart;
 import com.watch.model.User;
-import com.watch.services.Imp.Hash;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -35,10 +33,6 @@ public class CheckoutProcess extends HttpServlet {
         HttpSession ss = request.getSession();
         User user = (User) ss.getAttribute("user");
         if (user != null) {
-            Cart cart = (Cart) ss.getAttribute("cart");
-            Hash hash = Hash.getInstance("MD5");
-            String hashcode = hash.hash(cart.toString());
-            ss.setAttribute("hashcode", hashcode);
             request.getRequestDispatcher("/view/client/checkout.jsp").forward(request, response);
 
         } else {

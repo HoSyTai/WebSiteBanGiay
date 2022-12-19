@@ -43,14 +43,6 @@
 							<label for="sdt" class="title">Số điện thoại*</label> <input
 								type="text" class="sdt" id="sdt" name="sdt" required="required">
 						</div>
-						<div class="order-form-group">
-							<label for="" class="title">Mã đơn hàng*</label> <input
-								type="text" class="sdt" id="" name="" value="${sessionScope.hashcode}" disabled>
-						</div>
-						<div class="order-form-group">
-							<label for="ghichu" class="title">Chữ ký số:</label>
-							<textarea name="signature" id="ghichu" rows="10"></textarea>
-						</div>
 					</div>
 				</div>
 				<div class="order-right">
