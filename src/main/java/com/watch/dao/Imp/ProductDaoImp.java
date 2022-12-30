@@ -292,36 +292,6 @@ public class ProductDaoImp implements IProductDao {
         return result;
     }
 
-//    @Override
-//    public List<Product> getProductByColor(String param) {
-//        List<Product> result = new ArrayList<Product>();
-//        String query = "select * from SanPham where MauSac = ?";
-//        try {
-//            conn = DBConnection.getConnection();
-//            ps = conn.prepareStatement(query);
-//            ps.setString(1, param);
-//            rs = ps.executeQuery();
-//            while (rs.next()) {
-//                String id = rs.getString(1);
-//                String name = rs.getString(2);
-//                String img = rs.getString(3);
-//                boolean male = rs.getBoolean(4);
-//                double price = rs.getDouble(5);
-//                double baseprice = rs.getDouble(6);
-//                String desc = rs.getString(7);
-//                String cateId = rs.getString(8);
-//                Product p = new Product(id, name, img, male, price, baseprice, desc, cateId);
-//                result.add(p);
-//            }
-//            rs.close();
-//            ps.close();
-//            conn.close();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//
-//        return result;
-//    }
 
     @Override
     public int getNumOfProduct(String cate, String gender, String pName) {

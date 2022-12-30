@@ -60,7 +60,7 @@
 
 						</div>
 					</div>
-					<div class="products__rigtside">
+					<div class="products__rights-ide">
 						<div class="product__list product-wrap">
 							<c:forEach var="o" items="${listP}">
 								<div class="product__item product-slider-content">

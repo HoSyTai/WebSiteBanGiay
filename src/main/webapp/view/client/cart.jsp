@@ -79,7 +79,7 @@
                     </h4>
                     <div class="fee">
                         <span class="fee__text">Tổng sản phẩm</span>
-                        <span class="fee__number cart--total"><fmt:formatNumber type="currency" value="${cart.getTotalPrice()}"></fmt:formatNumber></span>
+                        <span class="fee__number cart--total"><fmt:formatNumber type="number" value="${cart.getTotalPrice()}"></fmt:formatNumber></span>
                     </div>
                     <div class="fee">
                         <span class="fee__text">Giao hàng</span>
@@ -115,8 +115,11 @@
                 var map = data.items;
                 var total = 0
 
+
+
                 for(var key in map){
                     total += map[key].price
+
                 }
                 for (var key in map) {
                     if (map.hasOwnProperty(key)) {
@@ -127,7 +130,8 @@
                                 style: 'currency',
                                 currency: 'VND',
                             });
-                            itemTotal.text(formatter.format(map[key].quantity * map[key].product.price ))
+
+                            itemTotal.text(formatter .format(map[key].quantity * map[key].product.price ))
                             $('.cart--total').html(formatter.format(total))
 
                         }
@@ -163,8 +167,8 @@
                                     style: 'currency',
                                     currency: 'VND',
                                 });
-                                itemTotal.text(formatter.format(map[key].quantity * map[key].product.price ))
 
+                                itemTotal.text(formatter.format(map[key].quantity * map[key].product.price ))
                                 $('.cart--total').html(formatter.format(total))
 
                             }
@@ -198,6 +202,7 @@
                         style: 'currency',
                         currency: 'VND',
                     });
+
                     $('.cart--total').html(formatter.format(total))
 
                 }
@@ -219,7 +224,9 @@
                 tr.remove();
 
                 var map = data.items;
+
                 var total = 0
+
                 var count = 0;
                 for(var key in map){
                     total += map[key].price
@@ -235,9 +242,11 @@
                 });
                 $('.cart--total').html(formatter.format(total))
 
+
             }
         });
     })
+
 </script>
 </body>
 </html>

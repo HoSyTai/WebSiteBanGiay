@@ -69,6 +69,15 @@ public class Cart {
             result += this.items.get(key).getPrice();
         }
         return result;
+    }public double getTotalQuantity() {
+        double result = 0.0;
+        Set<String> keys = items.keySet();
+        for (String key : keys) {
+            result += this.items.get(key).getQuantity();
+        }
+        return result;
     }
+
+
 
 }
